@@ -9,10 +9,18 @@ const StyledHeader =  styled.header`
     background: ${props => props.theme.colors.primary.a};
 `
 
-export const Header = ( {children}) => {
+const StyledAnchor = styled.a`
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: ${props => props.theme.colors.neutral.c};
+`
+
+export const Header = () => {
     return (
         <StyledHeader>
-            {children}
+            <img src='../../Logo-02 1.svg' alt='logo'></img>
+            <StyledAnchor href='#tag'>Login</StyledAnchor>
         </StyledHeader>
     )
 }

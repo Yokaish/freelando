@@ -20,7 +20,8 @@ export const theme = {
         neutral: {
             a: '',
             b: '',
-            c: ''
+            c: '#F5F5F5',
+            white: '#FFFFFF'
         },
         dark : {
             a: '',
