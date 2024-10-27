@@ -8,7 +8,7 @@ export const theme = {
         focus: '',
 
         primary : {
-            a: '5754ED',
+            a: '#5754ED',
             b: '',
             c: ''
         },
