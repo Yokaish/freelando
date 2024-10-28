@@ -5,7 +5,6 @@ const components = {
     h2: 'h2',
     h3: 'h3',
     body: 'p',
-    label: 'label',
 }
 
 const styles = {
@@ -57,12 +56,6 @@ const styles = {
         font-style: normal;
         font-weight: 400;
         text-decoration-line: underline;
-    `,
-    label1: `
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 8px
     `
 }
 

@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { Typography } from "../Typography/Typography";
 
 const StyledInput = styled.input`
     display: block;
@@ -19,11 +18,18 @@ const StyledInput = styled.input`
     }
 `;
 
+const StyledLabel = styled.label`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: ${ props => props.theme.spacing.xs};
+`
+
 export const TextField = ({ label }) => {
     return (
-        <Typography component='label' variable='label1'>
+        <StyledLabel>
             {label}
             <StyledInput />
-        </Typography>
+        </StyledLabel>
     );
 };
