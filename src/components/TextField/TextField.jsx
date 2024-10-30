@@ -9,9 +9,9 @@ const StyledInput = styled.input`
     background: ${props => props.theme.colors.neutral.white};
     border: none;
     outline: none;
-    padding-left: ${props => props.theme.spacing.s};
     font-family: ${props =>props.theme.fontFamily};
     font-size: 14px;
+    
 
     &:focus {
        font-family: ${props =>props.theme.fontFamily}
@@ -23,6 +23,7 @@ const StyledLabel = styled.label`
     flex-direction: column;
     width: 100%;
     gap: ${ props => props.theme.spacing.xs};
+    text-align: left;
 `
 
 export const TextField = ({ label }) => {

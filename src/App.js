@@ -14,32 +14,68 @@ function App() {
     <MyThemeProvider>
       <Styles />
       <Header />
-      <Container>
-        <Row justify="center">
-          <Col lg={6}>
-            <Card>
-              <Typography variable='h1' component='h1'>
-                Crie seu cadastro
-              </Typography>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
+        <Container>
+          <Row justify="center" style={{margin: '80px 0px'}}>
+            <Col lg={6} md={6} sm={12}>
+              <Card>
+                <Typography variable='h1' component='h1'>
+                  Crie seu cadastro
+                </Typography>
 
-              <Typography variable='body1' component='body'>
-                Crie seu perfil gratuitamente para começar a trabalhar com os melhores freelancers. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho.
-              </Typography>
+                <Typography variable='body1' component='body'>
+                  Crie seu perfil gratuitamente para começar a trabalhar com os melhores freelancers. Em seguida, você poderá dar mais detalhes sobre suas demandas e sobre sua forma de trabalho.
+                </Typography>
 
-              <TextField label='Nome Completo'></TextField>
-              <Button variable="secondary">
-                Teste
-              </Button>
-              <Button>
-                Teste
-              </Button>
-            </Card>
-          </Col>
-        </Row>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
+                  <Row>
+                    <Col>
+                      <TextField label='Nome Completo'></TextField>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col lg={4} md={4} sm={4}>
+                      <TextField label='Estado'></TextField>
+                    </Col>
+                    <Col lg={8} md={8} sm={8}>
+                      <TextField label='Cidade'></TextField>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <TextField label='E-mail'></TextField>
+                    </Col>
+                  </Row>
 
-      </Container>
+                  <Row>
+                    <Col lg={6} md={6} sm={6}>
+                      <TextField label='Senha'></TextField>
+                    </Col>
+                    <Col lg={6} md={6} sm={6}>
+                      <TextField label='Repita a senha'></TextField>
+                    </Col>
+                  </Row>
 
+                  <Row justify="between">
+                    <Col lg={6} md={6} sm={6} style={{ textAlign: 'left' }}>
+                      <Button variable="secondary">
+                        Anterior
+                      </Button>
+                    </Col>
+                    <Col lg={6} md={6} sm={6} style={{ textAlign: 'right' }}>
+                      <Button>
+                        Próxima
+                      </Button>
+                    </Col>
+                  </Row>
+                </div>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </MyThemeProvider>
+
   );
 }
 
