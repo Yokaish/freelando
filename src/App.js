@@ -6,6 +6,7 @@ import { Header } from "./components/Header/Header";
 import { MyThemeProvider } from "./components/MyThemeProvider/MyThemeProvider";
 import { TextField } from "./components/TextField/TextField";
 import { Typography } from "./components/Typography/Typography";
+import { Button } from "./components/Button/Button";
 
 
 function App() {
@@ -26,6 +27,12 @@ function App() {
               </Typography>
 
               <TextField label='Nome Completo'></TextField>
+              <Button variable="secondary">
+                Teste
+              </Button>
+              <Button>
+                Teste
+              </Button>
             </Card>
           </Col>
         </Row>

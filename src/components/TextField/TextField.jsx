@@ -6,7 +6,7 @@ const StyledInput = styled.input`
     height: 40px;
     align-self: stretch;
     border-radius: 16px;
-    background: ${props => props.theme.colors.white};
+    background: ${props => props.theme.colors.neutral.white};
     border: none;
     outline: none;
     padding-left: ${props => props.theme.spacing.s};
