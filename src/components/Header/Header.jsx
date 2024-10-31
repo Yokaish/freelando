@@ -19,7 +19,7 @@ const StyledAnchor = styled.a`
 export const Header = () => {
     return (
         <StyledHeader>
-            <img src='../../Logo-02 1.svg' alt='logo'></img>
+            <img src='../../img/Logo-02 1.svg' alt='logo'></img>
             <StyledAnchor href='#tag'>Login</StyledAnchor>
         </StyledHeader>
     )

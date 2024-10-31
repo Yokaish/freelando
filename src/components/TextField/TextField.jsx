@@ -9,14 +9,15 @@ const StyledInput = styled.input`
     background: ${props => props.theme.colors.neutral.white};
     border: none;
     outline: none;
-    font-family: ${props =>props.theme.fontFamily};
+    font-family: ${props => props.theme.fontFamily};
     font-size: 14px;
-    
+    padding-left: ${props => props.theme.spacing.s}; // Espaçamento adicionado para o texto
 
     &:focus {
-       font-family: ${props =>props.theme.fontFamily}
+       font-family: ${props => props.theme.fontFamily};
     }
 `;
+
 
 const StyledLabel = styled.label`
     display: flex;
